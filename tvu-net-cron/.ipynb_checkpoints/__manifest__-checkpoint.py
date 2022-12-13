@@ -10,7 +10,7 @@
     'version': '0.1',
     'depends': ['sale'],
     'data':[
-        
+        'views/cancel_expired_quotation_view.xml',
     ],
     'demo':[
         
