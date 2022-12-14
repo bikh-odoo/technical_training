@@ -10,7 +10,7 @@ class ProductTemplate(models.Model):
     
     pair_per_case = fields.Integer(string='Pair Per Case', help='this is a helper', default=0)
     price_per_case = fields.Monetary(string='Price Per Pair', default=0.00)
-    
+    is_changed = False
     
     @api.onchange('pair_per_case', 'price_per_case')
     def _onchange_sales_price(self):
@@ -20,7 +20,6 @@ class ProductTemplate(models.Model):
             raise UserError('Price cannot be less than $0.00')
             
         self.list_price = self.price_per_case * self.pair_per_case
-        self.list_price
-        
+        is_changed = True
     
         

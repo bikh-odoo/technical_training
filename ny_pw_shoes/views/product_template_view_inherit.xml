@@ -10,7 +10,7 @@
                 <xpath expr="//field[@name='barcode']" position="after">
                     <field name="pair_per_case"/>
                     <field name="price_per_case"/>
-                    <field name="list_price"/>
+                    <field name="list_price" position="move" attrs="{'readonly':[('is_changed','=',True)]}"/>
                 </xpath>
             </field>
         </record>
