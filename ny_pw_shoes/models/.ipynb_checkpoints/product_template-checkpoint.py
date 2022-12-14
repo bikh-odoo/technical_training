@@ -20,6 +20,7 @@ class ProductTemplate(models.Model):
             raise UserError('Price cannot be less than $0.00')
             
         self.list_price = self.price_per_case * self.pair_per_case
+        self.list_price = {'readonly':True}
         
     
         
