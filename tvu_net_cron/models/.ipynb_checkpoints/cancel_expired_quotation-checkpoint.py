@@ -5,7 +5,7 @@ from datetime import date
 
 
 class cancelExpiredQuotation(models.Model):
-    _name = "cancel_expired_quotation"
+    _name = "tvu_net_cron.cancel_expired_quotation"
     _description = ""
     
     def _cancel_expired_quotations(self):
