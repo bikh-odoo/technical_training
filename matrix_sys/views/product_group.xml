@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    
+    <data>
+        <record model="ir.ui.view" id="product_group_view_form">
+            <field name="name">product.group.form</field>
+            <field name="model">product.group</field>
+            <field name="arch" type="xml">
+            </field>
+        </record>
+    </data>
 </odoo>
