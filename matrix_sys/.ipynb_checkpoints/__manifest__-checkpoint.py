@@ -11,7 +11,7 @@
     'version': '0.1', 
     'depends': ['sale'], 
     'data': [
-        
+        'views/product_group.xml',
     ], 
     'demo': [
         'demo/matrix_demo.xml',
