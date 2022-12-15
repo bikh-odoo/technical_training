@@ -3,8 +3,8 @@
 <odoo>
     <data>
         <record model="ir.ui.view" id="group_view_form">
-            <field name="name">product.group.form</field>
-            <field name="model">product.group</field>
+            <field name="name">matrix.group.form</field>
+            <field name="model">matrix.group</field>
             <field name="arch" type="xml">
                 <form string="Group Form">
                     <sheet>
@@ -17,8 +17,8 @@
             </field>
         </record>
         <record model="ir.ui.view" id="group_view_list">
-            <field name="name">product.group.list</field>
-            <field name="model">product.group</field>
+            <field name="name">matrix.group.list</field>
+            <field name="model">matrix.group</field>
             <field name="arch" type="xml">
                 <tree string="Group List">
                     <field name="name"/>
