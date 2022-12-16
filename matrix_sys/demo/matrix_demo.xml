@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+        <record model="matrix.group" id="first_group">
+            <field name="name">First Group</field>
+            <field name="description">It's a first Group</field>
+        </record>
+        <record model="matrix.group" id="second_group">
+            <field name="name">Second Group</field>
+            <field name="description">It's a second group</field>
+        </record>
+        <record model="matrix.group" id="third_group">
+            <field name="name">Third Group</field>
+            <field name="description">It's a third group</field>
+        </record>
+    </data>
+</odoo>

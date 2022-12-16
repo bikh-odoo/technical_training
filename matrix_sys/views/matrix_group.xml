@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="group_view_form">
+            <field name="name">matrix.group.form</field>
+            <field name="model">matrix.group</field>
+            <field name="arch" type="xml">
+                <form string="Group Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <notebook>
+                            <page string="Description"/>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="group_view_list">
+            <field name="name">matrix.group.list</field>
+            <field name="model">matrix.group</field>
+            <field name="arch" type="xml">
+                <tree string="Group List">
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
