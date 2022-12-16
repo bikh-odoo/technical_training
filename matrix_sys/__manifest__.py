@@ -11,7 +11,12 @@
     'version': '0.1', 
     'depends': ['sale'], 
     'data': [
-        'views/product_group.xml',
+        'security/matrix_security.xml',
+        'security/ir.model.access.csv',
+        'views/matrix_group.xml',
+        'views/matrix_menuitems.xml',
+        'views/product_view_inherit.xml',
+        'views/product_sequence.xml',
     ], 
     'demo': [
         'demo/matrix_demo.xml',
