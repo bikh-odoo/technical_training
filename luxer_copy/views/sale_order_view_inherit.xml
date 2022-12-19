@@ -9,6 +9,7 @@
             <field name="arch" type="xml">
                  <xpath expr="//field[@name='partner_id']" position='after'>
                      <field name="property_partner"/>
+                     <field name="test_num"/>
                 </xpath>
             </field>
         </record>

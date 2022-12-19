@@ -11,7 +11,8 @@
     'version': '0.1', 
     'depends': ['sale', 'sale_subscription'], 
     'data': [
-        'views/sale_order_view_inherit.xml'
+        'views/sale_order_view_inherit.xml',
+        'views/subscription_view_inherit.xml',
     ], 
     'demo': [
     ],

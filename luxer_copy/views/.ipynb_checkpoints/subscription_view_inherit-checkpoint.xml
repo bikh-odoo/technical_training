@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="subscription_view_inherit_luxer">
+            <field name="name">subscription.inherit.luxer</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position='after'>
+                    <field name="property_partner"/>
+                    <field name="partner_id"/>
+                    
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
