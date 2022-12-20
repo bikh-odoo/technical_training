@@ -2,8 +2,6 @@
 
 <odoo>
     <template id="sale_report_inherit_template" inherit_id="sale.report_saleorder_document">
-        <xpath expr="//div[@t-set='address']" position="inside">
-            <strong>Billing Address</strong>
-        </xpath>
+        
     </template>
 </odoo>
