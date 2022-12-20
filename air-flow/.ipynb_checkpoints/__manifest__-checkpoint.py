@@ -8,7 +8,7 @@
     'website': 'https://www.odoo.com', 
     'category': 'Training',
     'version': '0.1', 
-    'depends': ['base'], 
+    'depends': ['sale'], 
     'data': [
         'report/sale_report_inherit.xml',
     ], 
