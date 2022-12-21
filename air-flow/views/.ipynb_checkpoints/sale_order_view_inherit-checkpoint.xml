@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="sale_order_view_inherit_air_flow">
+            <field name="name">sale.order.inherit.air.flow</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position='after'>
+                    <field name="project_manager"/>
+                    <field name="project_name"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

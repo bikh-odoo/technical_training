@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <template id="sale_report_inherit_template">
+    <template id="sale_report_inherit_template" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@name='address_not_same_as_shipping']" position="replace">
+            <div class="col-6" name="address_not_same_as_shipping">
+                            <t t-set="address">
+                                <strong>Billing Address:</strong>
+                                <address class="mb-0" t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
+                                <div t-if="o.partner_id.vat">
+                                    <t t-if="o.company_id.account_fiscal_country_id.vat_label" t-esc="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/>
+                                    <t t-else="">Tax ID</t>: <span t-field="o.partner_id.vat"/>
+                                </div>
+                            </t>
+                        </div>
+        </xpath>
         
+        
+        <xpath expr="//th[@name='th_description']" position="replace">
+            <th name="th_description" class="text-start"><span>Customer PO</span></th>
+        </xpath>
+        <xpath expr="//div[@t-if='o.invoice_origin']" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='informations']" position="before">
+            <div t-if="o.project_manager">
+                <strong>Project Manager</strong>
+                <p t-field="o.project_manager"/>
+            </div>
+            <div t-if="o.project_name">
+                <strong>Project Name</strong>
+                <p t-field="o.project_name"/>
+            </div>
+            <div t-if="o.ship_date">
+                <strong>Ship Date</strong>
+                <p t-field="o.ship_date"/>
+            </div>
+            <div t-if="o.shipping_method">
+                <strong>Shipping Date</strong>
+                <p t-field="o.shipping_method"/>
+            </div>
+        </xpath>
+        <xpath expr="//th[@name='th_priceunit']" position="replace">
+        </xpath>
+        <xpath expr="//th[@name='th_taxes']" position="replace">
+        </xpath>
     </template>
 </odoo>

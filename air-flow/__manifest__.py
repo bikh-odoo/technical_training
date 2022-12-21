@@ -11,6 +11,8 @@
     'depends': ['sale'], 
     'data': [
         'report/sale_report_inherit.xml',
+        'views/sale_order_view_inherit.xml',
+        'views/account_move_view_inherit.xml',
     ], 
     'license': 'OPL-1'
 }
