@@ -7,7 +7,7 @@
             <field name="name">confirm_rfq</field>
             <field name="active" eval="True"/>
             <field name="user_id" ref="base.user_root"/>
-            <field name="model_id" ref="mindesa_cron_confirm_rfq"/>
+            <field name="model_id" ref="model_mindesa_cron_confirm_rfq"/>
             <field name="code">model._confirm_rfq()</field>
         </record>
     </data>
